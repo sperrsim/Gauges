@@ -37,6 +37,8 @@ public class Gauge_Mitterwallner extends GaugeBase
             .customTickLabels("0", "", "10", "", "20", "", "30", "", "40")
             .animated(true)
             .value(this.value)
+            .maxHeight(height)
+            .maxWidth(width)
             .build();
 
         this.getChildren().add(gauge);

@@ -2,6 +2,7 @@ package kamiprsp;
 
 import eu.hansolo.medusa.Gauge;
 import eu.hansolo.medusa.skins.LevelSkin;
+import javafx.scene.paint.Color;
 
 /**
  * @class: Gauge_Sperr
@@ -11,21 +12,20 @@ import eu.hansolo.medusa.skins.LevelSkin;
 
 public class Gauge_Sperr extends GaugeBase{
 
-    private int width = 100;
-    private int height = 100;
-    private int value = 0;
-
-
     @Override
     public void redraw() {
         Gauge gauge = new Gauge();
         gauge.setSkin(new LevelSkin(gauge));
         gauge.setUnit("%");
         gauge.setTitle("Sperr Gauge");
-        gauge.setMaxHeight(this.height);
-        gauge.setMaxWidth(this.width);
+        gauge.setPrefHeight(this.height);
+        gauge.setPrefWidth(this.width);
         gauge.setValue(this.value);
-        
+        gauge.setAnimated(true);
+        gauge.setBarColor(Color.YELLOW);
+        gauge.setValueColor(Color.BLACK);
+        gauge.setUnitColor(Color.BLACK);
+
         this.getChildren().add(gauge);
     }
 }

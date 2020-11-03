@@ -14,14 +14,17 @@ public class Gauge_Sperr extends GaugeBase{
 
     @Override
     public void redraw() {
+        this.getChildren().clear();
+
         Gauge gauge = new Gauge();
         gauge.setSkin(new LevelSkin(gauge));
         gauge.setUnit("%");
         gauge.setTitle("Sperr Gauge");
-        gauge.setPrefHeight(this.height);
-        gauge.setPrefWidth(this.width);
+        gauge.setMaxHeight(this.height);
+        gauge.setMaxWidth(this.width);
         gauge.setValue(this.value);
         gauge.setAnimated(true);
+        gauge.setAutoScale(true);
         gauge.setBarColor(Color.YELLOW);
         gauge.setValueColor(Color.BLACK);
         gauge.setUnitColor(Color.BLACK);

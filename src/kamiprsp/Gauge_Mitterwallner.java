@@ -5,6 +5,7 @@ import eu.hansolo.medusa.skins.TileKpiSkin;
 import javafx.scene.paint.Color;
 
 /**
+ * @class: Gauge_Mitterwallner
  * @author: Tobias Mitterwallner
  * @date: 22.10.2020
  */

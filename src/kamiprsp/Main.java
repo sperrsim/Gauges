@@ -11,6 +11,12 @@ import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
+/**
+ * @class: Main
+ * @author: Simon Sperr, Elias Kalkhofer, Tobias Mitterwallner, Marcel Prielinger
+ * @date: 22.10.2020
+ */
+
 public class Main extends Application
 {
     GaugeBase gb = new GaugeBase();

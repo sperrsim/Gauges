@@ -14,9 +14,9 @@ import javafx.scene.text.Text;
 
 public class GaugeBase extends Group {
 
-    private int width = 100;
-    private int height = 100;
-    private int value = 0;
+    protected int width = 100;
+    protected int height = 100;
+    protected int value = 0;
 
     public GaugeBase()
     {

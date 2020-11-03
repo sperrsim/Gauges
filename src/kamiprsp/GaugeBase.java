@@ -6,6 +6,11 @@ import javafx.scene.shape.Rectangle;
 import javafx.scene.text.Font;
 import javafx.scene.text.Text;
 
+/**
+ * @class: Gaugebase
+ * @author: Simon Sperr, Elias Kalkhofer, Tobias Mitterwallner, Marcel Prielinger
+ * @date: 22.10.2020
+ */
 
 public class GaugeBase extends Group {
 
